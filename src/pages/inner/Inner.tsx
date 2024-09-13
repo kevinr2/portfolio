@@ -1,13 +1,6 @@
-import React from "react";
-
 import { motion, Variants } from "framer-motion";
 import { expand, opacity } from "@/anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
-
-
-
-
-type props = Variants;
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const anim = (variants: Variants, custom?: number) => {
