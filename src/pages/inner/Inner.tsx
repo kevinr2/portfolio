@@ -1,9 +1,11 @@
 import React from "react";
 
 import { motion, Variants } from "framer-motion";
+import { expand, opacity } from "@/anim/anim";
+import { NavbarComponent } from "@/components/NavbarComponent";
 
-import { opacity, expand } from "./anim";
-import { NavbarComponent } from "../components/NavbarComponent";
+
+
 
 type props = Variants;
 
