@@ -1,54 +1,29 @@
-.stairs{
+.inner{
 
-    .transition-container{
+    background-color: black;
 
-        position: fixed;
+    .page{
 
-        width: 100vw;
-
-        height: 100vh;
-
-        display: flex;
-
-        left: 0;
-
-        top: 0;
-
-        pointer-events: none;
-
-        z-index: 2;
-
-        div{
-
-            position: relative;
-
-            height: 100%;
-
-            width: 100%;
-
-            background-color: gray;
-
-        }
+        background-color: #e5e5e5;
+        color: black;
 
     }
 
-    .transition-background{
-
-        position: fixed;
-
-        width: 100%;
+    .slide{
 
         height: 100vh;
 
-        background-color: gray;
+        width: 100%;
 
-        z-index: 1;
+        position: fixed;
 
-        pointer-events: none;
+        left: 0;
 
         top: 0;
 
-        left: 0;
+        background-color: #e5e5e5;
+
+        z-index: 1;
 
     }
 
