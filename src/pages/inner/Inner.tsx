@@ -30,7 +30,8 @@ export default function Layout({children}:{children:React.ReactNode}) {
 
 
 
-    const nbOfColumns = 5
+    const nombre = "Kevin"; // Tu nombre
+    const letrasNombre = nombre.split(""); 
 
     return (
 
@@ -42,11 +43,13 @@ export default function Layout({children}:{children:React.ReactNode}) {
 
                 {
 
-                    [...Array(nbOfColumns)].map( (_, i) => {
+                    letrasNombre.map( (letra, i) => {
 
                         return (
 
-                            <motion.div key={i} {...anim(expand, nbOfColumns - i)}/>
+                            <motion.div key={i} {...anim(expand, letrasNombre.length - i)}>
+                                <h1>{letra}</h1>
+                            </motion.div>
 
                         ) 
 

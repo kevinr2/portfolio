@@ -65,3 +65,7 @@ export const opacity = {
     }
 
 }
+
+export const text ={
+    
+}
