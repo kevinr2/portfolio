@@ -1,33 +1,69 @@
-import { motion, Variants } from "framer-motion";
-import { perspective, slide, opacity } from "@/anim/anim";
-import { NavbarComponent } from "@/components/NavbarComponent";
+import React from 'react'
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  const anim = (variants: Variants) => {
-    return {
-      initial: "initial",
+import { motion, Variants } from 'framer-motion';
 
-      animate: "enter",
+import { opacity, expand } from '../../anim/anim';
 
-      exit: "exit",
 
-      variants,
-    };
-  };
 
-  return (
-    <>
-      <div className="inner">
-        <motion.div className="slide" {...anim(slide)} />
+export default function Layout({children}:{children:React.ReactNode}) {
 
-        <motion.div className="page" {...anim(perspective)}>
-          <motion.div {...anim(opacity)}>
-            <NavbarComponent />
 
-            {children}
-          </motion.div>
-        </motion.div>
-      </div>
-    </>
-  );
+
+    const anim = (variants:Variants, custom?:number) => {
+
+        return {
+
+            initial: "initial",
+
+            animate: "enter",
+
+            exit: "exit",
+
+            custom,
+
+            variants
+
+        }
+
+    }
+
+
+
+    const nbOfColumns = 5
+
+    return (
+
+        <div className='page stairs' style={{backgroundColor:'white'}}>
+
+            <motion.div {...anim(opacity)} className='transition-background'/>
+
+            <div className='transition-container'>
+
+                {
+
+                    [...Array(nbOfColumns)].map( (_, i) => {
+
+                        return (
+
+                            <motion.div key={i} {...anim(expand, nbOfColumns - i)}/>
+
+                        ) 
+
+                    })
+
+                }
+
+            </div>
+
+            {
+
+                children
+
+            }
+
+        </div>
+
+    )
+
 }

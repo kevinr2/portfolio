@@ -1,99 +1,67 @@
-export const perspective = {
+export const expand = {
 
-  initial: {
+    initial: {
 
-      scale: 1,
+        top: 0
 
-      y: 0,
+    },
 
-  },
+    enter: (i:number) => ({    
 
-  enter: {
+        top: "100vh",
 
-      scale: 1,
+        transition: {
 
-      y: 0,
+            duration: 0.4,
 
-  },
+            delay: 0.05 * i,
 
-  exit: {
+            ease: [0.215, 0.61, 0.355, 1],
 
-      scale: 0.9,
+        },
 
-      y: -150,
+        transitionEnd: { height: "0", top: "0" }
 
-      opacity: 0.5,
+    }),
 
-      transition: {
+    exit: (i:number) => ({
 
-          duration: 1.2,
+        height: "100vh",
 
-          ease: [0.76, 0, 0.24, 1]
+        transition: {
 
-      }
+            duration: 0.4,
 
-  }
+            delay: 0.05 * i,
 
-}
+            ease: [0.215, 0.61, 0.355, 1]
 
+        }
 
-
-export const slide = {
-
-  initial: {
-
-      y: "100vh",
-
-  },
-
-  enter: {
-
-      y: "100vh"
-
-  },
-
-  exit: {
-
-      y: 0,
-
-      transition: {
-
-          duration: 1,
-
-          ease: [0.76, 0, 0.24, 1]
-
-      }
-
-  }
+    })
 
 }
-
-
 
 export const opacity = {
 
-  initial: {
+    initial: {
 
-      opacity: 0
+        opacity: 0.5
 
-  },
+    },
 
-  enter: {
+    enter: {
 
-      opacity: 1,
+        opacity: 0
 
-      transition: {
+    },
 
-          duration: 0.5
+    exit: {
 
-      }
+        opacity: 0.5,
 
-  },
+        
 
-  exit: {
-
-      opacity: 1
-
-  }
+    }
 
 }
