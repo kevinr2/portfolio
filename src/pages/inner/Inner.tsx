@@ -11,6 +11,8 @@ const rubik = Rubik_Glitch_Pop({
   subsets: ["latin"],
 });
 
+
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   const anim = (variants: Variants, custom?: number) => {
     return {
