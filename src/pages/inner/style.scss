@@ -26,8 +26,16 @@
 
             width: 100%;
 
-            background-color: black;
+            background-color: #3b4c26;
 
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           h1{
+             color: white; 
+             font-size: 96px;  
+             text-shadow: -8px 4px 2px rgba(92, 85, 85, 0.788); 
+          }
         }
 
     }
@@ -40,7 +48,7 @@
 
         height: 100vh;
 
-        background-color: black;
+        background-color: #3b4c26;
 
         z-index: 1;
 

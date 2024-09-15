@@ -1,3 +1,5 @@
+import { exit } from "process"
+
 export const expand = {
 
     initial: {
@@ -12,7 +14,7 @@ export const expand = {
 
         transition: {
 
-            duration: 0.4,
+            duration: 0.6,
 
             delay: 0.05 * i,
 
@@ -30,7 +32,7 @@ export const expand = {
 
         transition: {
 
-            duration: 0.4,
+            duration: 0.6,
 
             delay: 0.05 * i,
 
@@ -67,5 +69,14 @@ export const opacity = {
 }
 
 export const text ={
+    initial:{
+        opacity:1
+    },
+    enter:{
+        opacity:0
+    },
+    exit:{
+        opacity:1
+    }
     
 }

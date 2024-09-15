@@ -2,7 +2,14 @@ import React from 'react'
 
 import { motion, Variants } from 'framer-motion';
 
-import { opacity, expand } from '../../anim/anim';
+import { opacity, expand,text } from '../../anim/anim';
+import { NavbarComponent } from '@/components/NavbarComponent';
+import { Rubik_Glitch_Pop } from 'next/font/google'
+ 
+const rubik = Rubik_Glitch_Pop({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 
 
@@ -30,7 +37,7 @@ export default function Layout({children}:{children:React.ReactNode}) {
 
 
 
-    const nombre = "Kevin"; // Tu nombre
+    const nombre = "KEVIN"; 
     const letrasNombre = nombre.split(""); 
 
     return (
@@ -48,7 +55,11 @@ export default function Layout({children}:{children:React.ReactNode}) {
                         return (
 
                             <motion.div key={i} {...anim(expand, letrasNombre.length - i)}>
-                                <h1>{letra}</h1>
+                               
+                                    <motion.h1 {...anim(text)} className={rubik.className} >{letra}</motion.h1>
+                                
+                            
+                                
                             </motion.div>
 
                         ) 
@@ -58,6 +69,7 @@ export default function Layout({children}:{children:React.ReactNode}) {
                 }
 
             </div>
+            <NavbarComponent/>
 
             {
 
