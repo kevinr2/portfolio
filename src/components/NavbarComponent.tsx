@@ -20,10 +20,10 @@ export const NavbarComponent = () => {
       <Link href="/">
         <h1 className={bowls.className}>Kevin<strong>Rev</strong></h1>
       </Link>
-      <div className={` ${monserrat.className} flex gap-5 text-lg justify-center `}> 
-        <Link href="/about">About</Link>
-        <Link href="/project">Project</Link>
-        <Link href="/contact">Contact</Link>
+      <div className={` ${monserrat.className} flex gap-5 text-lg justify-center  `}> 
+        <Link className="font-bold" href="/about">About</Link>
+        <Link className="font-bold" href="/project">Project</Link>
+        <Link className="font-bold" href="/contact">Contact</Link>
       </div>
     </div>
   );

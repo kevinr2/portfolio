@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
 
-
 export const Letras = ({ palabra }: { palabra: string }) => {
   return (
     <>
       {palabra.split("").map((letra, j) => (
         <motion.p
-
           drag
           whileTap={{
             textShadow: "none",
@@ -16,7 +14,15 @@ export const Letras = ({ palabra }: { palabra: string }) => {
           key={j}
           whileHover={{
             textShadow: "none",
-            transition: { duration: 0.2, ease: "easeInOut" },
+            y:-10,
+            transition: {
+              
+              duration: 0.2,
+              ease: "easeInOut",
+              type: "spring",
+              stiffness: 500,
+              damping: 30,
+            },
           }}
           style={{
             display: "inline-block",

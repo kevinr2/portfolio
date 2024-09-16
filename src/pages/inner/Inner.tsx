@@ -6,13 +6,14 @@ import { opacity, expand, text } from "../../anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
 import { Rubik_Glitch_Pop } from "next/font/google";
 import { Footer } from "@/components/Footer";
+import { FollowCursor } from "@/components/FollowCursor";
+
+
 
 const rubik = Rubik_Glitch_Pop({
   weight: "400",
   subsets: ["latin"],
 });
-
-
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const anim = (variants: Variants, custom?: number) => {
@@ -33,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const letrasNombre = nombre.split("");
 
   return (
-    <div className="page stairs" style={{ backgroundColor: "white" }}>
+    <div className="page stairs" style={{ backgroundColor: "#fefae0", position:'relative' }}>
       <motion.div {...anim(opacity)} className="transition-background" />
 
       <div className="transition-container">
@@ -48,9 +49,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         })}
       </div>
       <NavbarComponent />
-
       {children}
       <Footer />
+        <FollowCursor />
+
     </div>
   );
 }
