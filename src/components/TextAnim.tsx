@@ -1,7 +1,7 @@
 import { Letras } from "./Letras";
 
 
-export const Palabras = ({ palabras }: { palabras: Array<string> }) => {
+export const TextAnim= ({ palabras }: { palabras: Array<string> }) => {
   return (
     <>
       {palabras.map((palabra, i) => (
