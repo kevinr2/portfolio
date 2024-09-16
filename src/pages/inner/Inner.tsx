@@ -5,6 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { opacity, expand, text } from "../../anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
 import { Rubik_Glitch_Pop } from "next/font/google";
+import { Footer } from "@/components/Footer";
 
 const rubik = Rubik_Glitch_Pop({
   weight: "400",
@@ -49,6 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <NavbarComponent />
 
       {children}
+      <Footer />
     </div>
   );
 }
