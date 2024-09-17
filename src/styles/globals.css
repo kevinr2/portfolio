@@ -71,6 +71,7 @@ body{
 }
 
 .loader:after {
+  --piso-color: #283618;
   content: "";
   position: absolute;
   right: 0;
@@ -78,7 +79,7 @@ body{
   height: 7px;
   width: 45px;
   border-radius: 4px;
-  box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+  box-shadow: 0 5px 0 var(--piso-color), -35px 50px 0 var(--piso-color), -70px 95px 0 var(--piso-color);
   animation: loading-step 1s ease-in-out infinite;
 }
 
@@ -103,15 +104,15 @@ body{
 @keyframes loading-step {
   0% {
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
-            0 10px 0 #f2f2f2,
-            -35px 50px 0 #f2f2f2,
-            -70px 90px 0 #f2f2f2;
+            0 10px 0 var(--piso-color),
+            -35px 50px 0 var(--piso-color),
+            -70px 90px 0 var(--piso-color);
   }
 
   100% {
-    box-shadow: 0 10px 0 #f2f2f2,
-            -35px 50px 0 #f2f2f2,
-            -70px 90px 0 #f2f2f2,
+    box-shadow: 0 10px 0 var(--piso-color),
+            -35px 50px 0 var(--piso-color),
+            -70px 90px 0 var(--piso-color),
             -70px 90px 0 rgba(0, 0, 0, 0);
   }
 }
