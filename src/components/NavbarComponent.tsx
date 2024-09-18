@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Bowlby_One, Montserrat } from "next/font/google";
+import { Bowlby_One } from "next/font/google";
 import { useState } from "react";
 import {  motion } from 'framer-motion';
 
@@ -9,11 +9,7 @@ const bowls = Bowlby_One({
   subsets: ["latin"],
   display: "swap",
 });
-const monserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
+
 
 export const NavbarComponent = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
