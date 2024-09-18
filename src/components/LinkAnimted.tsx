@@ -59,6 +59,7 @@ const ref = useRef<HTMLDivElement | null>(null);
       onMouseMove={handleMouseMove }
       initial="initial"
       whileHover="whileHover"
+      whileTap="whileTap"
       className="group relative flex items-center justify-between border-b-2 border-[#514423] py-4 transition-colors duration-500 hover:border-l-pink-950 md:py-8"
     >
       <div>

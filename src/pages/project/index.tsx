@@ -27,7 +27,7 @@ export default function Project() {
             >
               <TextAnim palabras={menu} />
             </h1>
-            <div className="mx-auto max-w-5xl p-20">
+            <div className="mx-auto max-w-5xl ">
               <LinkAnimted
                 heading="Caledar"
                 subheading="React - mongoDB"

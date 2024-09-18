@@ -22,7 +22,7 @@ export const NavbarComponent = () => {
 
   return (
     <div className="">
-      <div className="fixed  text-n w-full px-4 mt-3 h-14 flex justify-between items-center mb-20">
+      <div className=" absolute text-n w-full px-4 mt-3 h-14 flex justify-between items-center ">
         <Link href="/">
           <h1 className={bowls.className}>
             Kevin<strong>Rev</strong>

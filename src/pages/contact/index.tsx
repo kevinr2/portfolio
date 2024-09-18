@@ -37,7 +37,7 @@ export default function Contact() {
             <h1 className="title">Kevinreve096@gmail.com</h1>
           </div>
           <div className="login-with">
-            <Link href="www.linkedin.com/in/kevin-revelo" target="_blank">
+            <Link href="https://www.linkedin.com/in/kevin-revelo" target="_blank">
               <div className="button-log">
                 <FaLinkedin />
               </div>
