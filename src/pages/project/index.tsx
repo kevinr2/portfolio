@@ -13,7 +13,7 @@ const monserrat = Montserrat({
   display: "swap",
 });
 
-const menu = ["Project"];
+const menu = ["Projectos"];
 
 export default function Project() {
   return (

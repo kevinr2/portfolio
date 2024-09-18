@@ -42,15 +42,15 @@ export const NavbarComponent = () => {
       </div>
 
 
-      <motion.div  className={`${isChecked === false ?"hidden":"block"} fixed right-0 top-14`} style={{ width: 200, height: 200 }}>
+      <motion.div  className={`${isChecked === false ?"hidden":"block"} absolute right-0 top-14`} style={{ width: 200, height: 200 }}>
         <Link  href="/about">
-           <button className="button2 mb-3"><span>About</span></button>
+           <button className="button2 mb-3"><span>acerca de mi</span></button>
         </Link>
         <Link href="/project">
-           <button className="button2 mb-3"><span>Project</span></button>
+           <button className="button2 mb-3"><span>projectos</span></button>
         </Link>
         <Link href="/contact">
-           <button className="button2"><span>Contact</span></button>
+           <button className="button2"><span>Contacto</span></button>
         </Link>
       </motion.div>
  

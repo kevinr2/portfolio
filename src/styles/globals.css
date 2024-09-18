@@ -17,7 +17,7 @@
 body{
   color: #514423;
   background-color: #fefae0;
-
+  
 }
 
 @layer utilities {
@@ -250,3 +250,4 @@ body{
   padding-bottom: 0px;
   outline: 0;
 }
+
