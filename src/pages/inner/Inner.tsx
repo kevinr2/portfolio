@@ -5,7 +5,6 @@ import { motion, Variants } from "framer-motion";
 import { opacity, expand, text } from "../../anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
 import { Rubik_Glitch_Pop } from "next/font/google";
-import { Footer } from "@/components/Footer";
 import { FollowCursor } from "@/components/FollowCursor";
 
 
@@ -50,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <NavbarComponent />
       {children}
-      <Footer />
+     
         <FollowCursor />
 
     </div>

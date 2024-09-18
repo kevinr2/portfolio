@@ -14,8 +14,8 @@ export default function About() {
     </Head>
   <Inner >
 
-           <div className='w-[100%] h-[100vh] flex justify-center items-center'>
-            <h1>About</h1>
+           <div className='w-[100%] h-[100vh] flex justify-between items-center'>
+
         </div>
  </Inner>
     </>
