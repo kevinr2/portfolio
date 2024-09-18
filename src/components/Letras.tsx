@@ -4,7 +4,7 @@ export const Letras = ({ palabra }: { palabra: string }) => {
   return (
     <>
       {palabra.split("").map((letra, j) => (
-        <motion.p
+        <motion.span
           drag
           whileTap={{
             textShadow: "none",
@@ -30,7 +30,7 @@ export const Letras = ({ palabra }: { palabra: string }) => {
           }}
         >
           {letra === " " ? "\u00A0" : letra}
-        </motion.p>
+        </motion.span>
       ))}
     </>
   );

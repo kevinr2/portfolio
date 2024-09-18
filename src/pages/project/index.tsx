@@ -59,7 +59,7 @@ export default function Project() {
                 href="#"
               />
             </div>
-            <div style={{position:'absolute',right:0}} className={`pr-1 ${monserrat.className}`}><span> ©Kevin Revelo - portfolio 2024</span></div>
+            <div style={{position:'absolute',right:0 }} className={`pr-1 ${monserrat.className} mt-5`}><span> ©Kevin Revelo - portfolio 2024</span></div>
           </section>
         </div>
       </Inner>

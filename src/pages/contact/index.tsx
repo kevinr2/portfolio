@@ -15,18 +15,16 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <Inner>
-      <div className="w-[100%] h-[100vh] flex-row content-center sm:flex   ml-[50px] sm:ml-0 pt-36 sm:pt-0 justify-around items-center overflow-x-hidden">
-
+      <div className="w-[100%] h-[100vh] flex-row content-center sm:flex   ml-[10px] sm:ml-0 pt-36 sm:pt-0 justify-around items-center overflow-x-hidden">
           <div
             style={{ color: "black" }}
             className="pb-[50px] w-96"
           >
             <div  className="  flex justify-around text-7xl ">
               <motion.span style={{width:'100px'}} animate={{scale:[1,0], x:[0,200]}} transition={{duration:5,type:"spring",repeat: Infinity}}>
-              <IoMailOutline />
+                 <IoMailOutline />
               </motion.span>
               <PiMailboxDuotone />
-
             </div>
             <span className="cursor-none text-4xl">¿Te gusto?, Tienes alguna Pregunta contactanos</span>
           </div> 
@@ -34,7 +32,7 @@ export default function Contact() {
         
         <div  className="form w-80">
           <div>
-            <h1 className="title">Kevinreve096@gmail.com</h1>
+            <h1 className="title">Kevinreve096@kevin.com</h1>
           </div>
           <div className="login-with">
             <Link href="https://www.linkedin.com/in/kevin-revelo" target="_blank">

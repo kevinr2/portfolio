@@ -6,6 +6,7 @@ import { opacity, expand, text } from "../../anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
 import { Rubik_Glitch_Pop } from "next/font/google";
 import { FollowCursor } from "@/components/FollowCursor";
+import Head from 'next/head';
 
 
 
@@ -33,6 +34,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const letrasNombre = nombre.split("");
 
   return (
+    <>
+    <Head>
+        <title>KevinRev</title>
+    </Head>  
     <div className="page stairs" style={{ backgroundColor: "#fefae0", position:'relative' }}>
       <motion.div {...anim(opacity)} className="transition-background" />
 
@@ -53,5 +58,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <FollowCursor />
 
     </div>
+    </>
   );
 }

@@ -108,7 +108,7 @@ const ref = useRef<HTMLDivElement | null>(null);
         transition={{ type: "spring" }}
         className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64" 
       >
-       <Image src={imgSrc} alt='porfolio' width={200} height={200} />
+       <Image src={imgSrc} alt='porfolio' width={200} height={200} style={{width:'auto', height:'auto'}} />
       </motion.div>
 
       <motion.div

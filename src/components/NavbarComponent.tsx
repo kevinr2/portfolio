@@ -17,19 +17,18 @@ export const NavbarComponent = () => {
   // Maneja los cambios del checkbox
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(e.target.checked);
-    console.log(isChecked)
   };
 
   return (
     <div className="">
-      <div className=" absolute text-n w-full px-4 mt-3 h-14 flex justify-between items-center ">
+      <div className=" absolute text-n w-[100%] px-4 mt-3 h-14 flex justify-between items-center ">
         <Link href="/">
           <h1 className={bowls.className}>
             Kevin<strong>Rev</strong>
           </h1>
         </Link>
 
-        <label className="flex flex-col gap-2 w-8 mr-7">
+        <label className="flex flex-col gap-2 w-8 ">
           <input
             className="peer hidden"
             type="checkbox"
