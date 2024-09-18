@@ -9,6 +9,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { PiMailboxDuotone } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
+import Link from "next/link";
 
 
 export default function Contact() {
@@ -36,18 +37,26 @@ export default function Contact() {
             <h1 className="title">Kevinreve096@gmail.com</h1>
           </div>
           <div className="login-with">
-            <div className="button-log">
-              <FaLinkedin />
-            </div>
-            <div className="button-log">
-              <FaGithubSquare />
-            </div>
-            <div className="button-log">
-              <FaInstagram />
-            </div>
-            <div className="button-log">
-              <BsTwitterX />
-            </div>
+            <Link href="www.linkedin.com/in/kevin-revelo" target="_blank">
+              <div className="button-log">
+                <FaLinkedin />
+              </div>
+            </Link>
+            <Link href="https://github.com/kevinr2" target="_blank">
+              <div className="button-log">
+                <FaGithubSquare />
+              </div>
+            </Link>
+            <Link href="https://www.instagram.com/kevinrevl/" target="_blank">
+              <div className="button-log">
+                <FaInstagram />
+              </div>
+            </Link>
+            <Link href="https://www.instagram.com/kevinrevl/" target="_blank">
+              <div className="button-log">
+                <BsTwitterX />
+              </div>
+            </Link>
           </div>
           <button className="button-confirm">read.cv</button>
         </div>

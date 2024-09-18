@@ -53,7 +53,7 @@ const ref = useRef<HTMLDivElement | null>(null);
       }
   };
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
     <motion.div
       ref={ref}
       onMouseMove={handleMouseMove }
