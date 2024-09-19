@@ -33,7 +33,7 @@ const Card = ({
     <div ref={container} className="cardContainer sheet">
       <div className="margin"></div>
       <motion.div
-        style={{ backgroundColor: scale, top: `calc(-5vh + ${i * 25}px)` }}
+        style={{ backgroundColor: scale, top: `calc(-10vh + ${i * 25}px)` }}
         className="card"
       >
         <h2>{title}</h2>
