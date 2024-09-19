@@ -4,8 +4,7 @@ import Inner from "../inner/Inner";
 import { LinkAnimted } from "@/components/LinkAnimted";
 import { TextAnim } from "@/components/TextAnim";
 
-
-import { Montserrat } from 'next/font/google';
+import { Montserrat } from "next/font/google";
 
 const monserrat = Montserrat({
   weight: "400",
@@ -59,7 +58,12 @@ export default function Project() {
                 href="#"
               />
             </div>
-            <div style={{position:'absolute',right:0 }} className={`pr-1 ${monserrat.className} mt-5`}><span> ©Kevin Revelo - portfolio 2024</span></div>
+            <div
+              style={{ position: "absolute", right: 0 }}
+              className={`pr-1 ${monserrat.className} mt-5`}
+            >
+              <span> ©Kevin Revelo - portfolio 2024</span>
+            </div>
           </section>
         </div>
       </Inner>
