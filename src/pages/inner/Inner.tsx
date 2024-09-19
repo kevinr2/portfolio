@@ -10,6 +10,9 @@ import Head from 'next/head';
 
 
 
+
+
+
 const rubik = Rubik_Glitch_Pop({
   weight: "400",
   subsets: ["latin"],
@@ -33,12 +36,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const nombre = "KEVIN";
   const letrasNombre = nombre.split("");
 
+  const menu =[
+     ["Acerca de Mi"],
+    ["Projectos"],
+    ["Contacto"]
+  ]
+
   return (
     <>
     <Head>
         <title>KevinRev</title>
     </Head>  
     <div className="page stairs" style={{ backgroundColor: "#fefae0", position:'relative' }}>
+
       <motion.div {...anim(opacity)} className="transition-background" />
 
       <div className="transition-container">

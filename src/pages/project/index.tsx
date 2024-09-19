@@ -22,7 +22,7 @@ export default function Project() {
         <div className="h-[100vh] w-[100%] pt-40">
           <section className=" p-4 md:p-8">
             <h1
-              className="mx-auto max-w-5xl text-center text-7xl font-extrabold tracking-tight pb-24"
+              className="mx-auto max-w-5xl text-center text-7xl text-[#ffb703] font-extrabold tracking-tight pb-24"
               style={{ textShadow: "6px 4px gray" }}
             >
               <TextAnim palabras={menu} />
