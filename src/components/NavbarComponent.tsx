@@ -74,7 +74,7 @@ export const NavbarComponent = () => {
       >
         <div className={`card2`}>
           <div className="flex gap-4"></div>
-          <Link href="/about" className="flex gap-2">
+          <Link href={`${language===false?"/about":"/en/about"}`} className="flex gap-2">
             <span
               className={`card2-title ${
                 router.asPath === "/about" &&
@@ -84,7 +84,7 @@ export const NavbarComponent = () => {
               {language===false?"Conoceme":"About Me"}
             </span>
           </Link>
-          <Link href="/project" className="flex gap-2">
+          <Link href={`${language===false?"/project":"/en/project"}`} className="flex gap-2">
             <span
               className={`card2-title ${
                 router.asPath === "/project" &&
@@ -95,7 +95,7 @@ export const NavbarComponent = () => {
               
             </span>
           </Link>
-          <Link href="/contact" className="flex gap-2">
+          <Link href={`${language===false?"/contact":"/en/contact"}`} className="flex gap-2">
             <span
               className={`card2-title ${
                 router.asPath === "/contact" &&
