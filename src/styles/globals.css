@@ -326,7 +326,7 @@ body{
   height: 500px;
   width: 1000px;
   border-radius: 25px;
-  padding: 50px;
+  padding: 20px;
   transform-origin: top;
 }
 
@@ -368,9 +368,7 @@ body{
   text-decoration: underline;
   cursor: pointer;
 }
-.imageContainer{
-  display: none;
-}
+
 
 .card .body .imageContainer {
   position: relative;

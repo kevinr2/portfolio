@@ -27,7 +27,7 @@ const Card = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className="cardContainer   ">
+    <div ref={container} className="cardContainer    ">
       <motion.div
         whileHover={{ boxShadow: "none" }}
         style={{
@@ -37,16 +37,16 @@ const Card = ({
           boxShadow: "12px 8px black",
           border: "solid black",
         }}
-        className="card"
+        className="card max-[349px]:p-0  md:p-[50px]"
       >
         <h2>{title}</h2>
 
         <div className="body ">
           <div className="description">
-            <p className="ralative sm:fixed">{description}</p>
+            <p className="">{description}</p>
           </div>
 
-          <div className="imageContainer   md:contents lg:block ">
+          <div className="imageContainer hidden md:block">
             <div className="inner ">
               <Image
                 fill
