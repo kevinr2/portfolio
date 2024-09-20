@@ -6,7 +6,8 @@ import { opacity, expand, text } from "../../anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
 import { Rubik_Glitch_Pop } from "next/font/google";
 import { FollowCursor } from "@/components/FollowCursor";
-import Head from "next/head";
+import { MetaHeader } from "@/headers/MetaHeader";
+
 
 const rubik = Rubik_Glitch_Pop({
   weight: "400",
@@ -33,12 +34,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <Head>
-        <title>KevinRev</title>
-      </Head>
+      <MetaHeader  />
       <div
         className="page stairs"
-        style={{ backgroundColor:"white", position: "relative", }}
+        style={{ backgroundColor: "white", position: "relative" }}
       >
         <motion.div {...anim(opacity)} className="transition-background" />
 

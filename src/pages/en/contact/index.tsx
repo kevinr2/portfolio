@@ -1,12 +1,12 @@
 import React from "react";
-import Inner from "../inner/Inner";
+import Inner from "../../inner/Inner";
 import { FaGithubSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { PiMailboxDuotone } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
 import Link from "next/link";
 
-export default function Contact() {
+export default function ContactEN() {
   return (
     <Inner>
       <div className="w-[100%] h-[100vh] flex-row content-center sm:flex    ml-[10px] sm:ml-0 pt-36 sm:pt-0 justify-around items-center overflow-x-hidden">
@@ -22,7 +22,7 @@ export default function Contact() {
             <PiMailboxDuotone />
           </div>
           <span className="cursor-none text-4xl">
-            ¿Te gusto?, Tienes alguna Pregunta contactanos
+           Did you like it? Do you have any questions? Contact us.
           </span>
         </div>
 

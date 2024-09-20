@@ -1,17 +1,24 @@
-"use client";
-import { projects } from "./data";
+
+import { projects } from "../data/data";
 
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import Card from "./Cards";
+import { projectsEN } from "../data/dataEN";
 
-export const ComponenteX = () => {
+interface Props{
+  english?:boolean
+}
+
+export const ComponenteX = ({english}:Props) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start start", "end end"],
   });
+
+   const data = english=== true ?projectsEN:projects
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -26,7 +33,7 @@ export const ComponenteX = () => {
 
   return (
     <main ref={container} className="">
-      {projects.map((project, i) => {
+      {data.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (
           <Card

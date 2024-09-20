@@ -16,7 +16,6 @@
 
 body{
   color: black;
-
   
 }
 
@@ -387,3 +386,4 @@ body{
   object-fit: cover;
   filter: grayscale(80%);
 }
+

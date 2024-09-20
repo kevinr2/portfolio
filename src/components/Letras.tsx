@@ -7,15 +7,15 @@ export const Letras = ({ palabra }: { palabra: string }) => {
         <motion.span
           whileTap={{
             textShadow: "none",
-            transition: { duration: 0.1, ease:"easeInOut" },
+            transition: { duration: 0.1, ease: "easeInOut" },
           }}
           dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
           key={j}
           whileHover={{
             textShadow: "none",
-            y:-10,
+            y: -10,
             transition: {
-              delay:0,
+              delay: 0,
               duration: 0.2,
               ease: "easeInOut",
               type: "spring",

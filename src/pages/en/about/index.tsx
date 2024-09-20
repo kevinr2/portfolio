@@ -1,5 +1,5 @@
 
-import Inner from '../inner/Inner'
+import Inner from '../../inner/Inner'
 import Head from 'next/head'
 import { TextAnim } from '@/components/TextAnim'
 import { ComponenteX } from '@/components/ComponenteX'
@@ -8,11 +8,11 @@ import { ComponenteX } from '@/components/ComponenteX'
 
 
 const texto =[
-  "Conoceme"
+  "ABout Me"
 ]
 
 
-export default function About() {
+export default function AboutEn() {
 
 
   return (
@@ -26,7 +26,7 @@ export default function About() {
             <TextAnim palabras={texto} />
           </h1>
         </div>
-        <ComponenteX />
+        <ComponenteX english />
     </Inner>
     </>
   )
