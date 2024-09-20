@@ -3,13 +3,10 @@ import Link from "next/link";
 import { Bowlby_One } from "next/font/google";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Montserrat } from 'next/font/google';
 
-const monserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
+import { useRouter } from "next/router";
+
+
 
 const bowls = Bowlby_One({
   weight: "400",
@@ -24,6 +21,9 @@ const variants = {
 
 export const NavbarComponent = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
+  const router= useRouter()
+  
+ 
 
   // Maneja los cambios del checkbox
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -60,20 +60,19 @@ export const NavbarComponent = () => {
         variants={variants}
         className={`${
           isChecked === false ? "hidden" : "block"
-        } absolute right-6 top-14 z-50`}
-        
+        } absolute right-6 top-14 z-50`}     
       >
-        <div className={`card2 ${monserrat.className} `}>
+        <div className={`card2`}>
            <div className="flex gap-4">
            </div>
           <Link href="/about" className="flex gap-2">
-            <span className="card2-title   hover:underline hover:underline-offset-8  hover:text-green-700">Conoceme</span>
+            <span className={`card2-title ${router.asPath === "/about" &&  "text-green-900 underline underline-offset-8 cursor-default "}  hover:underline hover:underline-offset-8   hover:text-green-700`} >Conoceme</span>
           </Link>
           <Link href="/project" className="flex gap-2">
-          <span  className="card2-title hover:underline hover:underline-offset-8  hover:text-green-700 ">Projectos</span>
+          <span className={`card2-title ${router.asPath === "/project" &&  "text-green-700 underline underline-offset-8 cursor-default "}  hover:underline hover:underline-offset-8   hover:text-green-700`} >Proyectos</span>
           </Link>
           <Link href="/contact" className="flex gap-2">
-            <span className="card2-title  hover:underline hover:underline-offset-8 hover:text-green-700">Contactanos</span>
+          <span className={`card2-title ${router.asPath === "/contact" &&  "text-green-700 underline underline-offset-8  cursor-default"}  hover:underline hover:underline-offset-8   hover:text-green-700`} >Contacto</span>
           </Link>
         </div>
       </motion.div>

@@ -1,7 +1,6 @@
 import React from "react";
 import Inner from "../inner/Inner";
 import { FaGithubSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { PiMailboxDuotone } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
@@ -10,8 +9,8 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <Inner>
-      <div className="w-[100%] h-[100vh] flex-row content-center sm:flex   ml-[10px] sm:ml-0 pt-36 sm:pt-0 justify-around items-center overflow-x-hidden">
-        <div style={{ color: "black" }} className="pb-[50px] w-96">
+      <div className="w-[100%] h-[100vh] flex-row content-center sm:flex    ml-[10px] sm:ml-0 pt-36 sm:pt-0 justify-around items-center overflow-x-hidden">
+        <div style={{ color: "black" }} className="pb-[50px] w-96 ">
           <div className="  flex justify-around text-7xl ">
             <motion.span
               style={{ width: "100px" }}
@@ -48,11 +47,6 @@ export default function Contact() {
             <Link href="https://www.instagram.com/kevinrevl/" target="_blank">
               <div className="button-log">
                 <FaInstagram />
-              </div>
-            </Link>
-            <Link href="https://www.instagram.com/kevinrevl/" target="_blank">
-              <div className="button-log">
-                <BsTwitterX />
               </div>
             </Link>
           </div>

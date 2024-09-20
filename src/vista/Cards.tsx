@@ -1,5 +1,6 @@
 "use client";
-import { useTransform, motion, useScroll, MotionValue } from "framer-motion";
+import { useTransform, motion,  MotionValue } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 interface Props {
@@ -10,38 +11,52 @@ interface Props {
   progress: MotionValue<number>;
   range: number[];
   targetScale: number;
+  src: string;
 }
 
 const Card = ({
-  i,
+
   title,
   description,
   progress,
   range,
   targetScale,
+  src,
 }: Props) => {
   const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "start start"],
-  });
-  scrollYProgress;
-
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div ref={container} className="cardContainer sheet">
-      <div className="margin"></div>
+    <div ref={container} className="cardContainer   ">
       <motion.div
-        style={{ backgroundColor: scale, top: `calc(-10vh + ${i * 25}px)` }}
+        whileHover={{ boxShadow: "none" }}
+        style={{
+          backgroundColor: "white",
+          scale,
+          top: `25px`,
+          boxShadow: "12px 8px black",
+          border: "solid black",
+        }}
         className="card"
       >
         <h2>{title}</h2>
-        <div className="body">
+
+        <div className="body ">
           <div className="description">
-            <p>{description}</p>
-            <span></span>
+            <p className="ralative sm:fixed">{description}</p>
           </div>
+
+          <div className="imageContainer   md:contents lg:block ">
+            <div className="inner ">
+              <Image
+                fill
+                src={`${src}`}
+                alt="image"
+
+              />
+            </div>
+          </div>
+
         </div>
       </motion.div>
     </div>

@@ -38,7 +38,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </Head>
       <div
         className="page stairs"
-        style={{ backgroundColor: "#fefae0", position: "relative" }}
+        style={{ backgroundColor:"white", position: "relative", }}
       >
         <motion.div {...anim(opacity)} className="transition-background" />
 

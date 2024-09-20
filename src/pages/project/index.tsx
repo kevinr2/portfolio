@@ -4,31 +4,28 @@ import Inner from "../inner/Inner";
 import { LinkAnimted } from "@/components/LinkAnimted";
 import { TextAnim } from "@/components/TextAnim";
 
-import { Montserrat } from "next/font/google";
 
-const monserrat = Montserrat({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
 
-const menu = ["Projectos"];
+const menu = ["Proyectos"];
 
 export default function Project() {
   return (
     <>
       <Inner>
-        <div className="h-[100vh] w-[100%] pt-40">
-          <section className=" p-4 md:p-8">
-            <h1
-              className="mx-auto max-w-5xl text-center text-7xl text-[#ffb703] font-extrabold tracking-tight pb-24"
+        <div className="h-[200vh] w-[100%] overflow-x-hidden" >
+          <div className="h-[100vh] flex justify-center items-center"> 
+           <h1
+              className=" text-center text-7xl   font-extrabold tracking-wide "
               style={{ textShadow: "6px 4px gray" }}
             >
               <TextAnim palabras={menu} />
             </h1>
-            <div className="mx-auto max-w-5xl ">
+          </div>
+          <section className=" mx-10  h-[100vh]">
+
+            <div className=" ">
               <LinkAnimted
-                heading="Caledar"
+                heading="Calendario"
                 subheading="React - mongoDB"
                 imgSrc="/2.PNG"
                 href="https://calendar-backend-production-e920.up.railway.app/auth/login"
@@ -51,20 +48,10 @@ export default function Project() {
                 imgSrc="/4.PNG"
                 href="https://kevinr2.github.io/coinsApi/"
               />
-              <LinkAnimted
-                heading="Fun"
-                subheading="Incase you're bored"
-                imgSrc="/1.PNG"
-                href="#"
-              />
             </div>
-            <div
-              style={{ position: "absolute", right: 0 }}
-              className={`pr-1 ${monserrat.className} mt-5`}
-            >
-              <span> ©Kevin Revelo - portfolio 2024</span>
-            </div>
+  
           </section>
+
         </div>
       </Inner>
     </>

@@ -2,21 +2,19 @@ export const projects = [
   {
     title: "Mi nombre es Kevin Revelo",
     description:
-      "Soy un apasionado desarrollador frontend con un enfoque claro en la creación de experiencias web intuitivas y visualmente impactantes. Me gradué como tecnólogo en análisis y desarrollo de sistemas de información en el SENA, donde adquirí una base sólida en el desarrollo de software. Actualmente, soy estudiante de ingeniería de sistemas, lo que me permite seguir ampliando mis conocimientos y habilidades en un entorno cada vez más dinámico y competitivo. Mi objetivo es estar a la vanguardia de las tecnologías emergentes y contribuir a proyectos que hagan la diferencia.",
+      "Soy un apasionado desarrollador frontend con un enfoque en crear experiencias digitales modernas y eficientes. Me formé como tecnólogo en análisis y desarrollo de sistemas de información en el SENA, lo que me proporcionó una sólida base en programación y resolución de problemas tecnológicos. Actualmente, continúo mi formación académica como estudiante de ingeniería de sistemas, donde sigo perfeccionando mis habilidades y conocimientos para afrontar desafíos más complejos en el mundo de la tecnología.",
+    src: "/perfil.jpg",
   },
   {
-    title: "Especializacion",
+    title: "Habilidades Técnicas",
     description:
-      "Me especializo en diseño de interfaces de usuario (UI) y experiencia de usuario (UX), combinando creatividad y tecnología para ofrecer soluciones atractivas y funcionales. Creo firmemente en que una buena interfaz no solo debe ser estéticamente agradable, sino también intuitiva y accesible para los usuarios. Para lograr esto, utilizo una combinación de herramientas modernas como React, Next.js y React Native, junto con Framer Motion para animaciones dinámicas, y Tailwind CSS y Material UI para crear diseños responsive y altamente personalizables.",
-    src: "/3.PNG",
+      "Mis principales competencias incluyen el desarrollo con JavaScript (React, Next.js, React Native), la creación de animaciones con Framer Motion, y el diseño de interfaces modernas utilizando Tailwind CSS y Material UI. Además, manejo la integración de API REST, lenguajes como Python y PHP para el backend, y realizo testing para asegurar la calidad y estabilidad del código.",
+    src: "/code2.jpg",
   },
   {
-    title: "mas sobre mi",
+    title: "Aptitudes",
     description:
-      "Además, me enfoco en asegurar la calidad de cada proyecto a través del testing riguroso. Esto no solo mejora el rendimiento de las aplicaciones, sino que garantiza una experiencia fluida y libre de errores. Me siento cómodo trabajando en equipos colaborativos, donde cada detalle cuenta, y disfruto del proceso de transformar ideas en soluciones digitales efectivas que impacten de manera positiva tanto en los usuarios como en los negocios.",
-  },
-  {
-    title: "Habilidades",
-    description: "lorem",
+      "Durante mis estudios como ingeniero de sistemas, he adquirido conocimientos y habilidades en áreas como Big Data, análisis de datos y Machine Learning. Estas competencias me permiten manejar grandes volúmenes de información y aplicar técnicas avanzadas para obtener insights valiosos, optimizando procesos y tomando decisiones informadas. Estoy siempre en busca de nuevas oportunidades para implementar estos conocimientos en proyectos reales y continuar mi crecimiento profesional.",
+    src: "/estudio2.jpg",
   },
 ];

@@ -5,16 +5,6 @@ export const Letras = ({ palabra }: { palabra: string }) => {
     <>
       {palabra.split("").map((letra, j) => (
         <motion.span
-          drag
-          animate={{x:[-100,0],opacity:[0,1],scale:[0,1],transition:{
-            ease:"easeInOut",
-            duration:2,
-            delay:0.8,
-            type: "spring",
-            staggerChildren: 0.5,
-            delayChildren: 0.5,
-          }}}
-
           whileTap={{
             textShadow: "none",
             transition: { duration: 0.1, ease:"easeInOut" },

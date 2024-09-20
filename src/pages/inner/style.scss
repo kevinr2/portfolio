@@ -26,7 +26,7 @@
 
             width: 100%;
 
-            background-color: #3b4c26;
+            background-color: black;
 
            display: flex;
            justify-content: center;
@@ -48,7 +48,7 @@
 
         height: 100vh;
 
-        background-color: #3b4c26;
+        background-color: black;
 
         z-index: 1000;
 
@@ -63,70 +63,3 @@
 }
 //pegada ahora
 
-.cardContainer{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-    .card{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: -25%;
-      height: 500px;
-      width: 1000px;
-      border-radius: 25px;
-      padding:50px;
-      transform-origin: top;
-      h2{
-        text-align: center;
-        margin: 0px;
-        font-size: 28px;
-      }
-      .body{
-        display: flex;
-        height: 100%;
-        gap: 50px;
-  
-        .description{
-          width: 100%;
-          position: relative;
-          top: 10%;
-          p{
-            font-size: 16px;
-            &::first-letter{
-              font-size: 28px;
-              font-family: 'Title';
-            }
-          }
-          span{
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            a{
-              font-size: 12px;
-              text-decoration: underline;
-              cursor: pointer;
-            }
-          }
-        }
-  
-        .imageContainer{
-          position: relative;
-          width: 60%;
-          height: 100%;
-          border-radius: 25px;
-          overflow: hidden;
-          .inner{
-            width: 100%;
-            height: 100%;
-          }
-          img{
-            object-fit: cover;
-          }
-        }
-      }
-    }
-  }

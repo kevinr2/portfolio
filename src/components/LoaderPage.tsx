@@ -28,7 +28,7 @@ export const LoaderPage = () => {
   }, []);
   return (
     <AnimatePresence mode="wait">
-      <motion.div initial={{opacity:0}}animate={{opacity:1}} exit={{opacity:0}} className="w-[100%] h-[100vh] flex justify-center items-center  bg-[#fefae0]">
+      <motion.div initial={{opacity:0}}animate={{opacity:1}} exit={{opacity:0}} className="w-[100%] h-[100vh] flex justify-center items-center bg-white">
           <div className="loader"></div>
           <div className={`${monserrat} fixed bottom-0 left-0`} style={{fontSize:45}}><h1>{`${progress} %`}</h1></div>
       </motion.div>
