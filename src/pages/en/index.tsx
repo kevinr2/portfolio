@@ -46,7 +46,7 @@ export default function HomeEs() {
             <h1 className="  min-[319px]:text-5xl sm:text-5xl md:text-5xl text-[#353535] cursor-default lg:text-7xl box-border font-extrabold tracking-tight">
               {isClient && <TextAnim palabras={words} />}
             </h1>
-            <Link href="/about">
+            <Link href="/en/about">
               <button className="button mt-4">learn more</button>
             </Link>
           </div>
