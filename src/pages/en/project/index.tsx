@@ -25,7 +25,7 @@ export default function Project() {
             <LinkAnimted
                 heading="Ecommerce "
                 subheading="Ecomerce-teslo"
-                imgSrc="/5.PNG"
+                imgSrc="/5.png"
                 href="https://ecommerce-teslo-pi.vercel.app/"
               />
               <LinkAnimted
