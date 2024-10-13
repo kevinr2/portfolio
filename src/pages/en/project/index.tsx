@@ -3,6 +3,7 @@ import Inner from "../../inner/Inner";
 import { LinkAnimted } from "@/components/LinkAnimted";
 import { TextAnim } from "@/components/TextAnim";
 import { Footer } from "@/components/Footer";
+import { ScrollPage } from "@/components/ScrollPage";
 
 const menu = ["Projects"];
 
@@ -18,6 +19,7 @@ export default function Project() {
             >
               <TextAnim palabras={menu} />
             </h1>
+            <ScrollPage />
           </div>
           <section className=" mx-10 pt-6   h-[100vh]">
             <LinkAnimted
