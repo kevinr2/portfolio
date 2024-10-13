@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { PiMailboxDuotone } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
 import Link from "next/link";
+import { Footer } from "@/components/Footer";
 
 export default function Contact() {
   return (
@@ -51,6 +52,10 @@ export default function Contact() {
             </Link>
           </div>
           <button className="button-confirm">read.cv</button>
+        </div>
+        <div className="absolute bottom-0 left-0 w-[100%] ">
+
+        <Footer />
         </div>
       </div>
     </Inner>

@@ -50,8 +50,11 @@ export default function Home() {
               <button className="button mt-4">Saber Mas</button>
             </Link>
           </div>
+          <div className="absolute bottom-0 left-0 w-[100%] ">
+
+            <Footer />
+          </div>
         </div>
-        <Footer />
       </Inner>
     </>
   );

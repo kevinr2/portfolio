@@ -8,15 +8,15 @@ import { reset } from "@/store/loader/loaderSlice";
 import { Footer } from "@/components/Footer";
 
 const words = [
-    "Kevin",
-    " Revelo",
-    " Developer ",
-    "frontend ",
-    "passionate",
-    "Creative",
-    " and ",
-    "innovative.",
-  ];
+  "Kevin",
+  " Revelo",
+  " Developer ",
+  "frontend ",
+  "passionate",
+  "Creative",
+  " and ",
+  "innovative.",
+];
 
 export default function HomeEs() {
   const [isClient, setIsClient] = useState(false);
@@ -51,7 +51,9 @@ export default function HomeEs() {
             </Link>
           </div>
         </div>
-        <Footer />
+        <div className="absolute bottom-0 left-0 w-[100%] ">
+          <Footer />
+        </div>
       </Inner>
     </>
   );

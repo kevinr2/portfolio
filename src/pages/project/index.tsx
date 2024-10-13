@@ -2,6 +2,7 @@ import React from "react";
 import Inner from "../inner/Inner";
 import { LinkAnimted } from "@/components/LinkAnimted";
 import { TextAnim } from "@/components/TextAnim";
+import { Footer } from "@/components/Footer";
 
 const menu = ["Proyectos"];
 
@@ -9,7 +10,7 @@ export default function Project() {
   return (
     <>
       <Inner>
-        <div className="h-[200vh] w-[100%]overflow-hidden">
+        <div className=" w-[100%]overflow-hidden">
           <div className="h-[100vh]   flex justify-center items-center">
             <h1
               className=" text-center text-7xl   font-extrabold tracking-wide "
@@ -44,7 +45,9 @@ export default function Project() {
                 href="https://kevinr2.github.io/portafolio/#s2"
               />
           </section>
+          <Footer />
         </div>
+        
       </Inner>
     </>
   );
