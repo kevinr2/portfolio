@@ -27,7 +27,7 @@ export default function Contact() {
           </span>
         </div>
 
-        <div className="form w-80">
+        <div className="form w-80 pb-32">
           <div>
             <h1 className="title">contacto@kevinrevelo.com</h1>
           </div>
@@ -53,10 +53,9 @@ export default function Contact() {
           </div>
           <button className="button-confirm">read.cv</button>
         </div>
-        <div className="absolute bottom-0 left-0 w-[100%] ">
-
+      </div>
+      <div className="sm:absolute sm:bottom-0 sm:left-0 ">
         <Footer />
-        </div>
       </div>
     </Inner>
   );
