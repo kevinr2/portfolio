@@ -49,7 +49,7 @@ export const LinkAnimted = ({ heading, imgSrc, subheading, href }: Props) => {
     }
   };
   return (
-    <Link href={href} target="_blank">
+    <Link href={href}  target="_blank">
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -69,7 +69,7 @@ export const LinkAnimted = ({ heading, imgSrc, subheading, href }: Props) => {
               staggerChildren: 0.075,
               delayChildren: 0.25,
             }}
-            className="relative z-10 block text-4xl font-bold #514423 transition-colors duration-500 group-hover:text-[#606c38] md:text-6xl"
+            className="relative  block text-4xl font-bold #514423 transition-colors duration-500 group-hover:text-[#606c38] md:text-6xl"
           >
             {heading.split("").map((l, i) => (
               <motion.span
@@ -86,7 +86,7 @@ export const LinkAnimted = ({ heading, imgSrc, subheading, href }: Props) => {
             ))}
           </motion.span>
           <span
-            className={`${monserrat.className} relative z-10 mt-2 block text-base #514423 transition-colors duration-500 group-hover:text-gray-600`}
+            className={`${monserrat.className} relative  mt-2 block text-base #514423 transition-colors duration-500 group-hover:text-gray-600`}
           >
             {subheading}
           </span>
@@ -104,14 +104,17 @@ export const LinkAnimted = ({ heading, imgSrc, subheading, href }: Props) => {
             whileHover: { scale: 1, rotate: "12.5deg" },
           }}
           transition={{ type: "spring" }}
-          className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+          className="absolute  h-24 w-32 rounded-lg object-cover md:h-48 md:w-64 "
         >
           <Image
             src={imgSrc}
             alt="porfolio"
             width={200}
             height={200}
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "auto", height: "auto",zIndex:1000 }}
+    
+
+         
           />
         </motion.div>
 
@@ -127,7 +130,7 @@ export const LinkAnimted = ({ heading, imgSrc, subheading, href }: Props) => {
             },
           }}
           transition={{ type: "spring" }}
-          className="relative z-10 p-4"
+          className="relative p-4"
         >
           <FiArrowRight className="text-5xl text-[#514423]" />
         </motion.div>

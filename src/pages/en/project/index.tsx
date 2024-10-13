@@ -12,7 +12,7 @@ export default function ProjectEN() {
   return (
     <>
       <Inner>
-        <div className="h-[200vh] w-[100%] overflow-x-hidden" >
+        <div className="h-[200vh] w-[100%] overflow-hidden" >
           <div className="h-[100vh] flex justify-center items-center"> 
            <h1
               className=" text-center text-7xl   font-extrabold tracking-wide "
@@ -21,9 +21,15 @@ export default function ProjectEN() {
               <TextAnim palabras={menu} />
             </h1>
           </div>
-          <section className=" mx-10  h-[100vh]">
+          <section className=" mx-10  h-[100vh] ">
 
-            <div className=" ">
+            <div className="">
+            <LinkAnimted
+                heading="Ecommerce "
+                subheading="Ecomerce-teslo"
+                imgSrc="/5.PNG"
+                href="https://ecommerce-teslo-pi.vercel.app/"
+              />
               <LinkAnimted
                 heading="Calendario"
                 subheading="React - mongoDB"
@@ -41,12 +47,6 @@ export default function ProjectEN() {
                 subheading="html/css - javascript - gsap"
                 imgSrc="/1.PNG"
                 href="https://kevinr2.github.io/portafolio/#s2"
-              />
-              <LinkAnimted
-                heading="Coins web"
-                subheading="reactjs  APi-rest"
-                imgSrc="/4.PNG"
-                href="https://kevinr2.github.io/coinsApi/"
               />
             </div>
   
