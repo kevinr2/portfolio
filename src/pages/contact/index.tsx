@@ -54,7 +54,7 @@ export default function Contact() {
           <button className="button-confirm">read.cv</button>
         </div>
       </div>
-      <div className="sm:absolute sm:bottom-0 sm:left-0 ">
+      <div className="sm:absolute sm:bottom-0 sm:left-0 w-full ">
         <Footer />
       </div>
     </Inner>

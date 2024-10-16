@@ -25,7 +25,7 @@ export const Letras = ({ palabra }: { palabra: string }) => {
           }}
           style={{
             display: "inline-block",
-            textShadow: "6px 4px gray",
+            textShadow: "6px 4px #bbbbbb",
           }}
         >
           {letra === " " ? "\u00A0" : letra}

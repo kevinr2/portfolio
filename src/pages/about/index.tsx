@@ -4,7 +4,7 @@ import { TextAnim } from "@/components/TextAnim";
 import { ComponenteX } from "@/components/ComponenteX";
 import { ScrollPage } from "@/components/ScrollPage";
 
-const texto = ["Conoceme"];
+const texto = ["Conóceme"];
 
 export default function About() {
   return (
