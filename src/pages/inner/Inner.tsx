@@ -54,7 +54,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
         <NavbarComponent />
         {children}
-
         <FollowCursor />
       </div>
     </>

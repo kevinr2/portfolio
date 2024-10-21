@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Montserrat } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
+import Head from "next/head";
 
 const monserrat = Montserrat({
   weight: "400",
@@ -26,21 +27,27 @@ export const LoaderPage = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="w-[100%] h-[100vh] flex justify-center items-center bg-white"
-      >
-        <div className="loader"></div>
-        <div
-          className={`${monserrat} fixed bottom-0 left-0`}
-          style={{ fontSize: 45 }}
+    <>
+      <Head>
+        <title>Kevin Revelo</title>
+        <meta name="descripcion" content="Soy kevin revelo desarrollador frot end  freelancer, React  Full stack"/>
+      </Head>
+      <AnimatePresence mode="wait">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="w-[100%] h-[100vh] flex justify-center items-center bg-white"
         >
-          <h1>{`${progress} %`}</h1>
-        </div>
-      </motion.div>
-    </AnimatePresence>
+          <div className="loader"></div>
+          <div
+            className={`${monserrat} fixed bottom-0 left-0`}
+            style={{ fontSize: 45 }}
+          >
+            <h1>{`${progress} %`}</h1>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </>
   );
 };
