@@ -2,8 +2,7 @@ import Link from "next/link";
 import Inner from "./inner/Inner";
 import { useEffect, useState } from "react";
 import { TextAnim } from "../components/TextAnim";
-import { LoaderPage } from "../components/LoaderPage";
-import { useAppSelector, useAppDispatch } from "../store/store";
+import {  useAppDispatch } from "../store/store";
 import { reset } from "@/store/loader/loaderSlice";
 import { Footer } from "@/components/Footer";
 
@@ -20,7 +19,7 @@ const palabras = [
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
-  const loading = useAppSelector((state) => state.loader.loader);
+
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -35,15 +34,13 @@ export default function Home() {
     return () => clearTimeout(timer);
   });
 
-  if (loading) {
-    return <LoaderPage />;
-  }
+
   return (
     <>
       <Inner>
         <div className="w-[100%] h-[100vh] overflow-hidden min-[319px]:px-8 md:px-60 flex  items-center">
           <div className="mt-2">
-            <h1 className="  min-[319px]:text-5xl sm:text-5xl md:text-5xl text-[#353535] cursor-default lg:text-7xl box-border font-extrabold tracking-tight">
+            <h1 className={`min-[319px]:text-5xl sm:text-5xl md:text-5xl  cursor-default lg:text-7xl  font-extrabold tracking-tight `}>
               {isClient && <TextAnim palabras={palabras} />}
             </h1>
             <Link href="/about">

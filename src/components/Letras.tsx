@@ -27,6 +27,7 @@ export const Letras = ({ palabra }: { palabra: string }) => {
             display: "inline-block",
             textShadow: "6px 4px #bbbbbb",
           }}
+          className={``}
         >
           {letra === " " ? "\u00A0" : letra}
         </motion.span>

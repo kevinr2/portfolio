@@ -1,12 +1,19 @@
-import React from "react";
+
 
 import { motion, Variants } from "framer-motion";
 
 import { opacity, expand, text } from "../../anim/anim";
 import { NavbarComponent } from "@/components/NavbarComponent";
-import { Rubik_Glitch_Pop } from "next/font/google";
+import { Rubik_Glitch_Pop, Playpen_Sans } from "next/font/google";
 import { FollowCursor } from "@/components/FollowCursor";
 import { MetaHeader } from "@/headers/MetaHeader";
+
+
+const playpen = Playpen_Sans({
+  weight: "700",
+  subsets: ["latin"],
+});
+
 
 
 const rubik = Rubik_Glitch_Pop({
@@ -36,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <MetaHeader  />
       <div
-        className="page stairs"
+        className={`page stairs ${playpen.className}`}
         style={{ backgroundColor: "white", position: "relative" }}
       >
         <motion.div {...anim(opacity)} className="transition-background" />

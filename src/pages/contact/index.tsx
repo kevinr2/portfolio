@@ -22,7 +22,7 @@ export default function Contact() {
             </motion.span>
             <PiMailboxDuotone />
           </div>
-          <span className="cursor-none text-4xl">
+          <span className="cursor-none text-4xl ">
             ¿Te gusto?, Tienes alguna Pregunta contactanos
           </span>
         </div>

@@ -38,9 +38,9 @@ export const NavbarComponent = () => {
 
   return (
     <div className="">
-      <div className=" absolute text-n w-[100%] px-4 mt-3 h-14 flex justify-between items-center  z-20">
+      <div className=" absolute text-n w-[100%] p-9 h-14 shadow-lg flex justify-between items-center border-solid border-2 border-black  z-20">
         <Link href={`${language===false?"/":"/en"}`}>
-          <h1 className={bowls.className}>
+          <h1 className={`${bowls.className} text-lg`}>
             Kevin<strong>Rev</strong>
           </h1>
         </Link>
