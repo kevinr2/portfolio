@@ -2,8 +2,7 @@ import Link from "next/link";
 import Inner from "../inner/Inner";
 import { useEffect, useState } from "react";
 import { TextAnim } from "../../components/TextAnim";
-import { LoaderPage } from "../../components/LoaderPage";
-import { useAppSelector, useAppDispatch } from "../../store/store";
+import {  useAppDispatch } from "../../store/store";
 import { reset } from "@/store/loader/loaderSlice";
 import { Footer } from "@/components/Footer";
 
@@ -20,7 +19,6 @@ const words = [
 
 export default function HomeEs() {
   const [isClient, setIsClient] = useState(false);
-  const loading = useAppSelector((state) => state.loader.loader);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -35,9 +33,7 @@ export default function HomeEs() {
     return () => clearTimeout(timer);
   });
 
-  if (loading) {
-    return <LoaderPage />;
-  }
+
   return (
     <>
       <Inner>
