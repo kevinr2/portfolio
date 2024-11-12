@@ -51,7 +51,9 @@ export default function Contact() {
               </div>
             </Link>
           </div>
-          <button className="button-confirm">read.cv</button>
+          <Link target="_blank" href="https://hup8kqe64.sites.cv/">
+            <button className="button-confirm">read.cv</button>
+          </Link>
         </div>
       </div>
       <div className="sm:absolute sm:bottom-0 sm:left-0 w-full ">
